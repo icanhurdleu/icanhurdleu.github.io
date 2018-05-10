@@ -1,1 +1,1 @@
-# samte.me [icanhurdleu.github.io]
+# samte.me
