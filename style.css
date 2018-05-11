@@ -1,20 +1,76 @@
-/** TEMP STYLES **/
-
-.temp-div {
-  max-width: 100%;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.temp-div > h1 {
-  font-size: 10em;
-}
-
-/* ROOT FONT STYLES */
 
 * {
   font-family: 'Open Sans', Helvetica, sans-serif;
-  color: #333447;
-  background-color: #fefefe;
 }
 
+body {
+  background-color: #EFFFE9;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+   -webkit-flex-flow: row wrap; 
+}
+
+.navigation li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: 2em;
+  display: block;
+  padding: 0.5em;
+  color: #2EC4B6;
+  flex-grow: 1;
+  border-bottom: 5px solid #EFFFE9;
+}
+
+.navigation a:hover {
+  border-bottom: 5px solid #2EC4B6;
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  .navigation a:hover {
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+h1 {
+  font-size: 15vw;
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  margin-top: 20vh;
+  color: #011627;
+}
