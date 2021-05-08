@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>samte.me &middot; Hugo Award List</title>
+  <meta name="author" content="Samuel Ellis">
+  <meta name="description" content="Samuel Ellis portfolio website">
+  <meta name="keywords" content="Samuel Ellis, samte.me, Hugo, Hugo Award">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css" type="text/css">
+  <link rel="stylesheet" href="hugo-style.css" type="text/css">
+</head>
+
+<body>
+
+<div class="parent">
+  <div class="navbar">
+    <div class="navbar-title"><h2>Hugo Award Winners &middot; Reading List</h2></div>
+    <div class="menu">
+      <ul>
+        <a href="http://samte.me"><li>samte.me</li></a>
+        <a href="#" onclick="showAll()"><li class="active" id="view-all">View All</li></a>
+        <a href="#" onclick="filterRead()"><li id="view-read">Read</li></a>
+        <a href="#" onclick="filterUnread()"><li id="view-unread">Unread</li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="progress"></div>
+
+<section class="book-list">
+  
+<div class="book">
+  <div class="year"><h2>1953</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Demolished Man</div>
+    <div class="author">Alfred Bester</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1955</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">They'd Rather Be Right</div>
+    <div class="author">Mark Clifton</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1956</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Double Star</div>
+    <div class="author">Robert A. Heinlein</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1958</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Big Time</div>
+    <div class="author">Fritz Leiber</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1959</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">A Case of Conscience</div>
+    <div class="author">James Blish</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1960</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Starship Troopers</div>
+    <div class="author">Robert A. Heinlein</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1961</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">A Canticle for Leibowitz</div>
+    <div class="author">Walter M. Miller, Jr.</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1962</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Stranger in a Strange Land</div>
+    <div class="author">Robert A. Heinlein</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1963</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Man in the High Castle</div>
+    <div class="author">Philip K. Dick</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1964</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Here Gather the Stars</div>
+    <div class="author">Clifford D. Simak</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1965</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Wanderer</div>
+    <div class="author">Fritz Leiber</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1966</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Dune</div>
+    <div class="author">Frank Herbert</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1967</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Moon Is a Harsh Mistress</div>
+    <div class="author">Robert A. Heinlein</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1968</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Lord of Light</div>
+    <div class="author">Roger Zelazny</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1969</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Stand on Zanzibar</div>
+    <div class="author">John Brunner</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1970</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Left Hand of Darkness</div>
+    <div class="author">Ursula K. Le Guin</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1971</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Ringworld</div>
+    <div class="author">Larry Niven</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1972</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">To Your Scattered Bodies Go</div>
+    <div class="author">Philip José Farmer</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1973</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Gods Themselves</div>
+    <div class="author">Isaac Asimov</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1974</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Rendezvous with Rama</div>
+    <div class="author">Arthur C. Clarke</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1975</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Dispossessed</div>
+    <div class="author">Ursula K. Le Guin</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1976</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Forever War</div>
+    <div class="author">Joe Haldeman</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1977</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Where Late the Sweet Birds Sang</div>
+    <div class="author">Kate Wilhelm</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1978</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Gateway</div>
+    <div class="author">Frederik Pohl</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1979</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Dreamsnake</div>
+    <div class="author">Vonda N. McIntyre</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1980</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Fountains of Paradise</div>
+    <div class="author">Arthur C. Clarke</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1981</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Snow Queen</div>
+    <div class="author">Joan D. Vinge</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>1982</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Downbelow Station</div>
+    <div class="author">C. J. Cherryh</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1983</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Foundation's Edge</div>
+    <div class="author">Isaac Asimov</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1984</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Startide Rising</div>
+    <div class="author">David Brin</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1985</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Neuromancer</div>
+    <div class="author">William Gibson</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1986</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Ender's Game</div>
+    <div class="author">Orson Scott Card</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1987</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Speaker for the Dead</div>
+    <div class="author">Orson Scott Card</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1988</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Uplift War</div>
+    <div class="author">David Brin</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1989</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Cyteen</div>
+    <div class="author">C. J. Cherryh</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1990</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Hyperion</div>
+    <div class="author">Dan Simmons</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1991</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Vor Game</div>
+    <div class="author">Lois McMaster Bujold</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1992</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Barrayar</div>
+    <div class="author">Lois McMaster Bujold</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1993</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">A Fire Upon the Deep</div>
+    <div class="author">Vernor Vinge</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1994</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Green Mars</div>
+    <div class="author">Kim Stanley Robinson</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1995</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Mirror Dance</div>
+    <div class="author">Lois McMaster Bujold</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1996</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Diamond Age</div>
+    <div class="author">Neal Stephenson</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1997</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Blue Mars</div>
+    <div class="author">Kim Stanley Robinson</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1998</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Forever Peace</div>
+    <div class="author">Joe Haldeman</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>1999</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">To Say Nothing of the Dog</div>
+    <div class="author">Connie Willis</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>2000</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">A Deepness in the Sky</div>
+    <div class="author">Vernor Vinge</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>2001</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Harry Potter and the Goblet of Fire</div>
+    <div class="author">J. K. Rowling</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2002</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">American Gods</div>
+    <div class="author">Neil Gaiman</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2003</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Hominids</div>
+    <div class="author">Robert J. Sawyer</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2004</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Paladin of Souls</div>
+    <div class="author">Lois McMaster Bujold</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2005</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Jonathan Strange & Mr Norrell</div>
+    <div class="author">Susanna Clarke</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2006</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Spin</div>
+    <div class="author">Robert Charles Wilson</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2007</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Rainbows End</div>
+    <div class="author">Vernor Vinge</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2008</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Yiddish Policemen's Union</div>
+    <div class="author">Michael Chabon</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2009</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Graveyard Book</div>
+    <div class="author">Neil Gaiman</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2010</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Windup Girl</div>
+    <div class="author">Paolo Bacigalupi</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2011</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Blackout/All Clear</div>
+    <div class="author">Connie Willis</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2012</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Among Others</div>
+    <div class="author">Jo Walton</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2013</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Redshirts</div>
+    <div class="author">John Scalzi</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2014</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Ancillary Justice</div>
+    <div class="author">Ann Leckie</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>2015</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Three-Body Problem</div>
+    <div class="author">Cixin Liu</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>2016</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Fifth Season</div>
+    <div class="author">N. K. Jemisin</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>2017</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Obelisk Gate</div>
+    <div class="author">N. K. Jemisin</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>2018</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Stone Sky</div>
+    <div class="author">N. K. Jemisin</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book already-read">
+  <div class="year"><h2>2019</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">The Calculating Stars</div>
+    <div class="author">Mary Robinette Kowal</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2020</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">A Memory Called Empire</div>
+    <div class="author">Arkady Martine</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+<div class="book">
+  <div class="year"><h2>2021</h2></div><div class="triangle-topleft"></div>
+  <div class="vert-stack">
+    <div class="title">Black Sun</div>
+    <div class="author">Rebecca Roanhorse</div>
+  </div>
+  <div class="completed"><img src="check-green.svg"></div>
+</div>
+
+
+</section>
+
+</body>  
+
+<script type="text/javascript" src="hugo.js"></script>
+
+</html>
